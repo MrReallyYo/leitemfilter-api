@@ -1,12 +1,13 @@
 package com.github.mrreallyyo.api.definitions
 
+import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.github.mrreallyyo.api.ItemFilterMapper
 import mu.KotlinLogging
 import java.io.InputStream
 import java.io.OutputStream
-
 
 data class ItemFilter(
     @JacksonXmlProperty(isAttribute = true, localName = "xmlns:i")
@@ -17,12 +18,13 @@ data class ItemFilter(
     var description: String? = null,
     var lastModifiedInVersion: String? = null,
     var lootFilterVersion: Int? = null,
+    @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = RulesFilter::class)
     var rules: Rules? = null
 ) {
-    @Transient
+    @JsonIgnore
     var fileName: String? = null
 
-    @Transient
+    @JsonIgnore
     var ruleColorOverride: Int? = null
 
 

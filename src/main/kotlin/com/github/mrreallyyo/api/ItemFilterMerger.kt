@@ -49,7 +49,6 @@ object ItemFilterMerger {
         }
 
         compactFilters.reversed().forEach { compactFilter ->
-
             logger.info { "Parsing ${compactFilter.fileName}." }
 
             val fixRules = mutableListOf<Rule>()
@@ -58,8 +57,8 @@ object ItemFilterMerger {
             // collect rules by type
             (compactFilter.rules?.rule ?: emptyList()).forEach { rule ->
                 when {
-                    rule.isAffixRule -> affixRules.add(rule)
-                    rule.isBaseRule -> baseRules.add(rule)
+                    rule.isAffixRule -> if (rule.isEnabled == true) affixRules.add(rule)
+                    rule.isBaseRule -> if (rule.isEnabled == true) baseRules.add(rule)
                     rule.isFixRule -> fixRules.add(rule)
                 }
             }
@@ -85,8 +84,19 @@ object ItemFilterMerger {
                     if (overrideColor != null) {
                         combined.recolor(overrideColor)
                     }
-
+                    combined.generateRuleName(compactFilter.fileName)
                     rules.add(combined)
+                }
+            }
+
+            fixRules.forEach {
+                if (it.nameOverride.isNullOrBlank()) {
+                    it.nameOverride = "Generated from ${compactFilter.fileName}"
+                } else {
+                    it.nameOverride += " from ${compactFilter.fileName}"
+                }
+                if (overrideColor != null) {
+                    it.recolor(overrideColor)
                 }
             }
 

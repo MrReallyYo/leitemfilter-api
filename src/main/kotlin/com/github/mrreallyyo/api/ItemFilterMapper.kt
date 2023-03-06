@@ -1,5 +1,7 @@
 package com.github.mrreallyyo.api
 
+import com.fasterxml.jackson.annotation.JsonInclude
+import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.xml.XmlFactory
@@ -17,15 +19,15 @@ object ItemFilterMapper {
         val output = XMLOutputFactory2.newFactory()
         output.setProperty(XMLOutputFactory2.P_AUTOMATIC_EMPTY_ELEMENTS, true)
 
-
         val mapper = XmlMapper.builder(XmlFactory(input, output)).apply {
             addModule(
                 KotlinModule.Builder().apply {}.build()
             )
             configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             configure(SerializationFeature.INDENT_OUTPUT, true)
-            configure(FromXmlParser.Feature.EMPTY_ELEMENT_AS_NULL, true)
         }.build()
+
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
 
         return mapper
     }

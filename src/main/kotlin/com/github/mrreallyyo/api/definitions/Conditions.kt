@@ -1,5 +1,6 @@
 package com.github.mrreallyyo.api.definitions
 
+import com.fasterxml.jackson.databind.JsonSerializable
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
@@ -8,3 +9,10 @@ data class Conditions(
     @JacksonXmlElementWrapper(useWrapping = false)
     var condition: List<Condition>? = null
 )
+
+class ConditionsFilter {
+    override fun equals(other: Any?): Boolean {
+        val conditions = other as? Conditions ?: return other == null
+        return conditions.condition == null || conditions.condition?.isEmpty() == true
+    }
+}

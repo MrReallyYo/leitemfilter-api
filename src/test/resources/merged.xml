@@ -3,7 +3,7 @@
   <filterIcon>1</filterIcon>
   <filterIconColor>15</filterIconColor>
   <description>Coole description.
-    From Mon Mar 06 09:34:26 CET 2023.</description>
+    From Mon Mar 06 17:20:06 CET 2023.</description>
   <lastModifiedInVersion>0.8.5f</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
@@ -15,8 +15,6 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
-      <conditions/>
       <isFixRule>false</isFixRule>
       <isAffixRule>false</isAffixRule>
       <isBaseRule>false</isBaseRule>
@@ -29,7 +27,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        1 WAND with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -87,33 +86,24 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>WAND</EquipmentType>
           </type>
           <subTypes>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -128,7 +118,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        4 CATALYST with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -186,19 +177,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>CATALYST</EquipmentType>
           </type>
@@ -208,14 +196,8 @@
             <int>12</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -230,7 +212,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        3 HELMET with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -288,19 +271,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>HELMET</EquipmentType>
           </type>
@@ -309,14 +289,8 @@
             <int>40</int>
             <int>21</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -331,7 +305,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        4 BODYARMOR with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -389,19 +364,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BODY_ARMOR</EquipmentType>
           </type>
@@ -411,14 +383,8 @@
             <int>22</int>
             <int>20</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -433,7 +399,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        3 BELT with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -491,19 +458,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BELT</EquipmentType>
           </type>
@@ -512,14 +476,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -534,7 +492,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        3 BOOTS with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -592,19 +551,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BOOTS</EquipmentType>
           </type>
@@ -613,14 +569,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -635,7 +585,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        3 GLOVES with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -693,19 +644,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>GLOVES</EquipmentType>
           </type>
@@ -714,14 +662,8 @@
             <int>6</int>
             <int>5</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -736,7 +678,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        6 AMULET with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -794,19 +737,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>AMULET</EquipmentType>
           </type>
@@ -818,14 +758,8 @@
             <int>8</int>
             <int>5</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -840,7 +774,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        7 RING with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -898,19 +833,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RING</EquipmentType>
           </type>
@@ -923,14 +855,8 @@
             <int>1</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -945,7 +871,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player2.xml
+        4 RELIC with 53 AFFIXES (NUM>=2)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1003,19 +930,16 @@
             <int>598</int>
             <int>628</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RELIC</EquipmentType>
           </type>
@@ -1025,14 +949,8 @@
             <int>26</int>
             <int>25</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1047,10 +965,9 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Idols</nameOverride>
+      <nameOverride>Idols from player2.xml</nameOverride>
       <conditions>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>IDOL_1x1_ETERRA</EquipmentType>
             <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
@@ -1063,14 +980,8 @@
             <EquipmentType>IDOL_2x2</EquipmentType>
           </type>
           <subTypes/>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>true</isFixRule>
@@ -1085,7 +996,7 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Skill Shatter</nameOverride>
+      <nameOverride>Skill Shatter from player2.xml</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1098,16 +1009,14 @@
             <int>628</int>
             <int>53</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>3</comparsionValue>
           <minOnTheSameItem>1</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>3</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>true</isFixRule>
@@ -1122,20 +1031,18 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Shatter more 4</nameOverride>
+      <nameOverride>Shatter more 4 from player2.xml</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes/>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>MORE_OR_EQUAL</comparsion>
           <comparsionValue>4</comparsionValue>
           <minOnTheSameItem>0</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>4</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>true</isFixRule>
@@ -1150,7 +1057,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        2 WAND with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1190,19 +1098,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>WAND</EquipmentType>
           </type>
@@ -1210,14 +1115,8 @@
             <int>10</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1232,7 +1131,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        4 CATALYST with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1272,19 +1172,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>CATALYST</EquipmentType>
           </type>
@@ -1294,14 +1191,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1316,7 +1207,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        3 HELMET with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1356,19 +1248,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>HELMET</EquipmentType>
           </type>
@@ -1377,14 +1266,8 @@
             <int>12</int>
             <int>11</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1399,7 +1282,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 BODYARMOR with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1439,19 +1323,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BODY_ARMOR</EquipmentType>
           </type>
@@ -1462,14 +1343,8 @@
             <int>11</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1484,7 +1359,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        2 BELT with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1524,19 +1400,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BELT</EquipmentType>
           </type>
@@ -1544,14 +1417,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1566,7 +1433,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        6 BOOTS with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1606,19 +1474,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BOOTS</EquipmentType>
           </type>
@@ -1630,14 +1495,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1652,7 +1511,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 GLOVES with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1692,19 +1552,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>GLOVES</EquipmentType>
           </type>
@@ -1715,14 +1572,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1737,7 +1588,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 AMULET with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1777,19 +1629,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>AMULET</EquipmentType>
           </type>
@@ -1800,14 +1649,8 @@
             <int>2</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1822,7 +1665,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 RING with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1862,19 +1706,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RING</EquipmentType>
           </type>
@@ -1885,14 +1726,8 @@
             <int>0</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1907,7 +1742,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        3 RELIC with 35 AFFIXES (NUM>=2 SUM>=7)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1947,19 +1783,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RELIC</EquipmentType>
           </type>
@@ -1968,14 +1801,8 @@
             <int>19</int>
             <int>14</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -1990,7 +1817,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        2 WAND with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2030,19 +1858,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>WAND</EquipmentType>
           </type>
@@ -2050,14 +1875,8 @@
             <int>10</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2072,7 +1891,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        4 CATALYST with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2112,19 +1932,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>CATALYST</EquipmentType>
           </type>
@@ -2134,14 +1951,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2156,7 +1967,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        3 HELMET with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2196,19 +2008,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>HELMET</EquipmentType>
           </type>
@@ -2217,14 +2026,8 @@
             <int>12</int>
             <int>11</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2239,7 +2042,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 BODYARMOR with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2279,19 +2083,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BODY_ARMOR</EquipmentType>
           </type>
@@ -2302,14 +2103,8 @@
             <int>11</int>
             <int>9</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2324,7 +2119,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        2 BELT with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2364,19 +2160,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BELT</EquipmentType>
           </type>
@@ -2384,14 +2177,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2406,7 +2193,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        6 BOOTS with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2446,19 +2234,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>BOOTS</EquipmentType>
           </type>
@@ -2470,14 +2255,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2492,7 +2271,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 GLOVES with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2532,19 +2312,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>GLOVES</EquipmentType>
           </type>
@@ -2555,14 +2332,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2577,7 +2348,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 AMULET with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2617,19 +2389,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>AMULET</EquipmentType>
           </type>
@@ -2640,14 +2409,8 @@
             <int>2</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2662,7 +2425,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        5 RING with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2702,19 +2466,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RING</EquipmentType>
           </type>
@@ -2725,14 +2486,8 @@
             <int>0</int>
             <int>3</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2747,7 +2502,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
+      <nameOverride>from player1.xml
+        3 RELIC with 35 AFFIXES (NUM>=2 SUM>=11)</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2787,19 +2543,16 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>RELIC</EquipmentType>
           </type>
@@ -2808,14 +2561,8 @@
             <int>19</int>
             <int>14</int>
           </subTypes>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2830,10 +2577,9 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>IDOLS</nameOverride>
+      <nameOverride>IDOLS from player1.xml</nameOverride>
       <conditions>
         <Condition i:type="SubTypeCondition">
-          <affixes/>
           <type>
             <EquipmentType>IDOL_1x1_ETERRA</EquipmentType>
             <EquipmentType>IDOL_1x1_LAGON</EquipmentType>
@@ -2846,14 +2592,8 @@
             <EquipmentType>IDOL_2x2</EquipmentType>
           </type>
           <subTypes/>
-          <req/>
-          <rarity/>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>true</isBaseCondition>
         </Condition>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2876,16 +2616,14 @@
             <int>297</int>
             <int>292</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>ANY</comparsion>
           <comparsionValue>0</comparsionValue>
           <minOnTheSameItem>2</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>true</isFixRule>
@@ -2900,7 +2638,7 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>SHATTER</nameOverride>
+      <nameOverride>SHATTER from player1.xml</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2926,16 +2664,14 @@
             <int>405</int>
             <int>416</int>
           </affixes>
-          <type/>
-          <subTypes/>
-          <req/>
-          <rarity/>
           <comparsion>MORE_OR_EQUAL</comparsion>
           <comparsionValue>5</comparsionValue>
           <minOnTheSameItem>1</minOnTheSameItem>
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
+          <isAffixCondition>true</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>true</isFixRule>
@@ -2950,20 +2686,11 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride/>
       <conditions>
         <Condition i:type="RarityCondition">
-          <affixes/>
-          <type/>
-          <subTypes/>
-          <req/>
           <rarity>UNIQUE SET EXALTED</rarity>
-          <comparsion/>
-          <comparsionValue/>
-          <minOnTheSameItem/>
-          <combinedComparsion/>
-          <combinedComparsionValue/>
-          <advanced/>
+          <isAffixCondition>false</isAffixCondition>
+          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
       <isFixRule>false</isFixRule>
@@ -2971,6 +2698,4 @@
       <isBaseRule>false</isBaseRule>
     </Rule>
   </rules>
-  <fileName/>
-  <ruleColorOverride/>
 </ItemFilter>

@@ -8,3 +8,10 @@ data class Rules(
     @JacksonXmlElementWrapper(useWrapping = false)
     var rule: List<Rule>? = null
 )
+
+class RulesFilter {
+    override fun equals(other: Any?): Boolean {
+        val rules = other as? Rules ?: return other == null
+        return rules.rule == null || rules.rule?.isEmpty() == true
+    }
+}

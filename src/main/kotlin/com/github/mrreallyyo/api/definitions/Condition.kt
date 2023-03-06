@@ -25,4 +25,8 @@ data class Condition(
     var advanced: Boolean? = null
 
 
-)
+) {
+
+    val isAffixCondition: Boolean = i_type == "AffixCondition"
+    val isBaseCondition: Boolean = i_type == "SubTypeCondition"
+}
