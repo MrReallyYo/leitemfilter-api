@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.mrreallyyo"
-version = "1.1"
+version = "1.2"
 
 repositories {
     mavenCentral()
@@ -28,6 +28,10 @@ tasks.test {
 
 kotlin {
     jvmToolchain(8)
+}
+
+java {
+    withSourcesJar()
 }
 
 publishing {
