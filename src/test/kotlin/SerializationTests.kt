@@ -1,4 +1,5 @@
 import com.github.mrreallyyo.api.definitions.ItemFilter
+import java.io.File
 import kotlin.test.Test
 import kotlin.test.assertNotNull
 
@@ -8,14 +9,21 @@ class SerializationTests {
     fun read() {
 
 
-        val filterFiles = listOf("player1.xml", "player2.xml", "merged.xml")
+        val filterFiles = listOf("player1.xml", "player2.xml", "merged.xml", "levelrule.xml")
 
-
+        val testDir = File("testfiles").apply { mkdirs() }
         filterFiles.forEach { filterFile ->
             val filter = SerializationTests::class.java.classLoader.getResourceAsStream(filterFile)?.use {
                 ItemFilter.load(it)
             }
             assertNotNull(filter, filterFile)
+
+
+
+            File(testDir, filterFile).outputStream().use {
+                filter.write(it)
+            }
+
         }
 
     }

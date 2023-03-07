@@ -1,0 +1,29 @@
+<ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <name>yo</name>
+    <filterIcon>0</filterIcon>
+    <filterIconColor>0</filterIconColor>
+    <description />
+    <lastModifiedInVersion>0.8.5f</lastModifiedInVersion>
+    <lootFilterVersion>0</lootFilterVersion>
+    <rules>
+        <Rule>
+            <type>SHOW</type>
+            <conditions>
+                <Condition i:type="LevelCondition">
+                    <treshold>1</treshold>
+                    <type>ABOVE_LEVEL</type>
+                </Condition>
+                <Condition i:type="ClassCondition">
+                    <req>Mage</req>
+                </Condition>
+            </conditions>
+            <color>0</color>
+            <isEnabled>true</isEnabled>
+            <levelDependent>false</levelDependent>
+            <minLvl>0</minLvl>
+            <maxLvl>0</maxLvl>
+            <emphasized>false</emphasized>
+            <nameOverride />
+        </Rule>
+    </rules>
+</ItemFilter>

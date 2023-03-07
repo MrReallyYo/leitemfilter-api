@@ -1,6 +1,7 @@
 package com.github.mrreallyyo.api.definitions
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 
@@ -14,14 +15,20 @@ data class Rule(
     var maxLvl: Int? = null,
     var emphasized: Boolean? = null,
     var nameOverride: String? = null,
+
     @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = ConditionsFilter::class)
     var conditions: Conditions? = null
 ) {
+    @JsonIgnore
     val isFixRule: Boolean = (conditions?.condition?.size ?: 0) > 1 || !nameOverride.isNullOrBlank()
+
+    @JsonIgnore
     val isAffixRule: Boolean =
         !isFixRule && conditions?.condition?.size == 1 && conditions!!.condition!!.first().isAffixCondition
-    val isBaseRule: Boolean =
-        !isFixRule && conditions?.condition?.size == 1 && conditions!!.condition!!.first().isBaseCondition
+
+    @JsonIgnore
+    val isSubTypeRule: Boolean =
+        !isFixRule && conditions?.condition?.size == 1 && conditions!!.condition!!.first().isSubTypeCondition
 
     fun recolor(color: Int) {
         this.color = color
@@ -33,16 +40,17 @@ data class Rule(
 
         val conditions = conditions?.condition ?: emptyList()
 
-        val affixCondition = conditions.firstOrNull { it.isAffixCondition }
-        val baseCondition = conditions.firstOrNull { it.isBaseCondition }
+        val affixCondition = conditions.firstOrNull { it.isAffixCondition } as? AffixCondition
+        val subTypeCondition = conditions.firstOrNull { it.isSubTypeCondition } as? SubTypeCondition
 
         nameOverride =
-            if (nameOverride != null || conditions.size != 2 || affixCondition == null || baseCondition == null) {
+            if (nameOverride != null || conditions.size != 2 || affixCondition == null || subTypeCondition == null) {
                 "from $fileName\n$nameOverride"
             } else {
 
-                val base = (baseCondition.type?.equipmentType ?: listOf("UNKNOWN")).joinToString("|").replace("_", "")
-                val baseTypes = baseCondition.subTypes?.int?.size ?: 0
+                val subType =
+                    (subTypeCondition.type?.equipmentType ?: listOf("UNKNOWN")).joinToString("|").replace("_", "")
+                val subTypeCount = subTypeCondition.subTypes?.int?.size ?: 0
 
                 val affixes = affixCondition.affixes?.int?.size ?: 0
 
@@ -69,12 +77,12 @@ data class Rule(
 
                 var name = "from $fileName\n"
 
-                if(baseTypes > 0) {
-                    name += "$baseTypes"
+                name += if (subTypeCount > 0) {
+                    "$subTypeCount"
                 } else {
-                    name += "ANY"
+                    "ANY"
                 }
-                name += " $base with $affixes AFFIXES ($howMany$match1$match2)"
+                name += " $subType with $affixes AFFIXES ($howMany$match1$match2)"
                 name
             }
 

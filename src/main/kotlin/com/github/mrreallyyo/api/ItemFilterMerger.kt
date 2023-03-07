@@ -92,7 +92,7 @@ class ItemFilterMerger(val options: MergerOptions) {
                     // sort rules for generation
                     when {
                         rule.isAffixRule -> if (rule.isEnabled == true) affixRules.add(rule)
-                        rule.isBaseRule -> if (rule.isEnabled == true) baseRules.add(rule)
+                        rule.isSubTypeRule -> if (rule.isEnabled == true) baseRules.add(rule)
                         rule.isFixRule -> if (rule.isEnabled == true || isMainFilter) rulesToKeep.add(rule)
                     }
                 }
@@ -110,7 +110,7 @@ class ItemFilterMerger(val options: MergerOptions) {
             // build combined affix/base rules if enabled
             affixRules.forEach { affix ->
                 baseRules.forEach { base ->
-                    val conditions = mutableListOf<Condition>()
+                    val conditions = mutableListOf<AbsCondition>()
                     affix.conditions?.condition?.firstOrNull()?.let { conditions.add(it) }
                     base.conditions?.condition?.firstOrNull()?.let { conditions.add(it) }
 

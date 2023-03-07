@@ -34,21 +34,25 @@ class MergerTests {
 
         val merged = merger.mergeFilter()
 
-/*
-        File("merged.xml").outputStream().use {
+        /*val testDir = File("testfiles").apply { mkdirs() }
+
+        File(testDir, "merged.xml").outputStream().use {
             merged.write(it)
-        }
-*/
+        }*/
+
         listOf(mergedExpected, merged).forEach {
             // contains generated stamp and will always fail
             it.description = null
 
-            it.rules?.rule?.forEach {rule ->
+            it.rules?.rule?.forEach { rule ->
                 // replace line break and spaces from deserialization
                 rule.nameOverride = rule.nameOverride?.replace(Regex("\\R\\s*"), " ")
             }
         }
 
+        merged.rules?.rule?.forEachIndexed { index, rule ->
+            assertEquals(mergedExpected.rules!!.rule!!.get(index), rule)
+        }
 
 
         assertEquals(mergedExpected, merged)

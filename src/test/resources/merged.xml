@@ -3,7 +3,7 @@
   <filterIcon>1</filterIcon>
   <filterIconColor>15</filterIconColor>
   <description>Coole description.
-    From Tue Mar 07 15:41:42 CET 2023.</description>
+    From Tue Mar 07 22:12:16 CET 2023.</description>
   <lastModifiedInVersion>0.8.5f</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
@@ -15,9 +15,6 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -92,8 +89,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -102,13 +97,8 @@
           <subTypes>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -183,8 +173,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -196,13 +184,8 @@
             <int>12</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -277,8 +260,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -289,13 +270,8 @@
             <int>40</int>
             <int>21</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -370,8 +346,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -383,13 +357,8 @@
             <int>22</int>
             <int>20</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -464,8 +433,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -476,13 +443,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -557,8 +519,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -569,13 +529,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -650,8 +605,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -662,13 +615,8 @@
             <int>6</int>
             <int>5</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -743,8 +691,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -758,13 +704,8 @@
             <int>8</int>
             <int>5</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -839,8 +780,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -855,13 +794,8 @@
             <int>1</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -936,8 +870,6 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -949,13 +881,8 @@
             <int>26</int>
             <int>25</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -981,13 +908,8 @@
             <EquipmentType>IDOL_2x2</EquipmentType>
           </type>
           <subTypes/>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>true</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1017,13 +939,8 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>3</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>true</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1044,13 +961,8 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>4</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>true</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1107,8 +1019,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1118,13 +1028,8 @@
             <int>10</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1181,8 +1086,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1194,13 +1097,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1257,8 +1155,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1269,13 +1165,8 @@
             <int>12</int>
             <int>11</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1332,8 +1223,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1346,13 +1235,8 @@
             <int>11</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1409,8 +1293,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1420,13 +1302,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1483,8 +1360,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1498,13 +1373,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1561,8 +1431,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1575,13 +1443,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1638,8 +1501,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1652,13 +1513,8 @@
             <int>2</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1715,8 +1571,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1729,13 +1583,8 @@
             <int>0</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1792,8 +1641,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>7</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1804,13 +1651,8 @@
             <int>19</int>
             <int>14</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1867,8 +1709,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1878,13 +1718,8 @@
             <int>10</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -1941,8 +1776,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -1954,13 +1787,8 @@
             <int>4</int>
             <int>5</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2017,8 +1845,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2029,13 +1855,8 @@
             <int>12</int>
             <int>11</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2092,8 +1913,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2106,13 +1925,8 @@
             <int>11</int>
             <int>9</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2169,8 +1983,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2180,13 +1992,8 @@
             <int>4</int>
             <int>2</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2243,8 +2050,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2258,13 +2063,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2321,8 +2121,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2335,13 +2133,8 @@
             <int>4</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2398,8 +2191,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2412,13 +2203,8 @@
             <int>2</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2475,8 +2261,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2489,13 +2273,8 @@
             <int>0</int>
             <int>3</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2552,8 +2331,6 @@
           <combinedComparsion>MORE_OR_EQUAL</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2564,13 +2341,8 @@
             <int>19</int>
             <int>14</int>
           </subTypes>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>true</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2596,8 +2368,6 @@
             <EquipmentType>IDOL_2x2</EquipmentType>
           </type>
           <subTypes/>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>true</isBaseCondition>
         </Condition>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -2626,13 +2396,8 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>1</combinedComparsionValue>
           <advanced>false</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>true</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>HIGHLIGHT</type>
@@ -2675,13 +2440,8 @@
           <combinedComparsion>ANY</combinedComparsion>
           <combinedComparsionValue>11</combinedComparsionValue>
           <advanced>true</advanced>
-          <isAffixCondition>true</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>true</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
     <Rule>
       <type>SHOW</type>
@@ -2694,13 +2454,8 @@
       <conditions>
         <Condition i:type="RarityCondition">
           <rarity>UNIQUE SET EXALTED</rarity>
-          <isAffixCondition>false</isAffixCondition>
-          <isBaseCondition>false</isBaseCondition>
         </Condition>
       </conditions>
-      <isFixRule>false</isFixRule>
-      <isAffixRule>false</isAffixRule>
-      <isBaseRule>false</isBaseRule>
     </Rule>
   </rules>
 </ItemFilter>
