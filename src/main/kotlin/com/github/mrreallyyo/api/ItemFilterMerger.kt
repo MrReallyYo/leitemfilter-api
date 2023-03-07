@@ -4,74 +4,110 @@ import com.github.mrreallyyo.api.definitions.*
 import mu.KotlinLogging
 import java.util.*
 
-object ItemFilterMerger {
+class ItemFilterMerger(val options: MergerOptions) {
 
     private val logger = KotlinLogging.logger { }
 
-    fun mergeFilter(
-        compactFilters: List<ItemFilter>, colors: List<Int>
-    ): ItemFilter {
 
-        logger.info { "Using embedded filter header." }
-        val header = ItemFilterMerger::class.java.classLoader.getResourceAsStream("_header.xml")!!.use {
+    private val mapper = options.mapper
+
+    private fun getHeader(): ItemFilter? {
+        if (options.header != null) return options.header
+        if (!options.useEmbeddedHeader) return null
+        return ItemFilterMerger::class.java.classLoader.getResourceAsStream("_header.xml")!!.use {
             ItemFilter.load(it)
         }
-        logger.info { "Using embedded filter footer." }
-        val footer = ItemFilterMerger::class.java.classLoader.getResourceAsStream("_footer.xml")!!.use {
-            ItemFilter.load(it)
-        }
-        return mergeFilter(header, footer, compactFilters, colors)
     }
 
-    fun mergeFilter(
-        header: ItemFilter, footer: ItemFilter, compactFilters: List<ItemFilter>, colors: List<Int>
-    ): ItemFilter {
+    private fun getFooter(): ItemFilter? {
+        if (options.footer != null) return options.footer
+        if (!options.useEmbeddedFooter) return null
+        return ItemFilterMerger::class.java.classLoader.getResourceAsStream("_footer.xml")!!.use {
+            ItemFilter.load(it)
+        }
+    }
 
-        val filter = clone(compactFilters.first())
+    private fun getOverrideColors(): List<Int> {
+        // dont override colors
+        if (!options.overrideColors) return emptyList()
+        val overrideColors = mutableListOf<Int>()
+        if (options.multiplayerColors.size >= options.baseFilters.size - 1) {
+            // we can match a color for each filter
+            for (i in 0 until options.baseFilters.size - 1) {
+                overrideColors.add(options.multiplayerColors[i])
+            }
+        } else if (options.multiplayerColors.isNotEmpty()) {
+            // only use first color
+            for (i in 0 until options.baseFilters.size - 1) {
+                overrideColors.add(options.multiplayerColors.first())
+            }
+        }
+        return overrideColors
+    }
+
+
+    private inline fun <reified T> clone(what: T): T {
+        val store = mapper.writeValueAsString(what)
+        return mapper.readValue(store, T::class.java)
+    }
+
+    fun mergeFilter(): ItemFilter {
+
+        if (options.baseFilters.isEmpty()) {
+            throw ItemFilterMergerException("No filter to work with.")
+        }
+
 
         val rules = mutableListOf<Rule>()
-        // footer rules
-        rules.addAll(clone(footer).rules!!.rule!!)
 
-        val colorsForOverride = mutableListOf<Int>()
-        if (colors.size >= compactFilters.size - 1) {
-            // we can match a color for each filter
-            logger.info { "Got individual override colors for each secondary filter." }
-            for (i in 0 until compactFilters.size - 1) {
-                colorsForOverride.add(colors[i])
-            }
-        } else if (colors.isNotEmpty()) {
-            // only use first color
-            logger.info { "Got override color for all secondary filter." }
-            for (i in 0 until compactFilters.size - 1) {
-                colorsForOverride.add(colors.first())
+        // check if we have a footer
+        getFooter()?.let { footer ->
+            clone(footer).rules?.rule?.let { footerRules ->
+                rules.addAll(footerRules)
             }
         }
 
-        compactFilters.reversed().forEach { compactFilter ->
-            logger.info { "Parsing ${compactFilter.fileName}." }
 
-            val fixRules = mutableListOf<Rule>()
+        val mainFilter = clone(options.baseFilters.first())
+
+        val colorsForOverride = getOverrideColors().toMutableList()
+
+        options.baseFilters.reversed().forEach { currentFilter ->
+            // check if this is the mainFilter
+            val isMainFilter = currentFilter == options.baseFilters.first()
+            logger.info { "Parsing ${currentFilter.fileName}." }
+
+            val rulesToKeep = mutableListOf<Rule>()
             val affixRules = mutableListOf<Rule>()
             val baseRules = mutableListOf<Rule>()
-            // collect rules by type
-            (compactFilter.rules?.rule ?: emptyList()).forEach { rule ->
-                when {
-                    rule.isAffixRule -> if (rule.isEnabled == true) affixRules.add(rule)
-                    rule.isBaseRule -> if (rule.isEnabled == true) baseRules.add(rule)
-                    rule.isFixRule -> fixRules.add(rule)
+
+            // sort rules
+            (currentFilter.rules?.rule ?: emptyList()).forEach { rule ->
+                if (!options.generateRules) {
+                    // we just keep all enabled rules from all filters and disabled from main filter
+                    if (rule.isEnabled == true || isMainFilter) {
+                        rulesToKeep.add(rule)
+                    }
+                } else {
+                    // sort rules for generation
+                    when {
+                        rule.isAffixRule -> if (rule.isEnabled == true) affixRules.add(rule)
+                        rule.isBaseRule -> if (rule.isEnabled == true) baseRules.add(rule)
+                        rule.isFixRule -> if (rule.isEnabled == true || isMainFilter) rulesToKeep.add(rule)
+                    }
                 }
             }
 
-            logger.info { "Found ${fixRules.size} fix rules." }
-            logger.info { "Found ${affixRules.size} affix rules." }
-            logger.info { "Found ${baseRules.size} base rules." }
-            logger.info { "Creating ${affixRules.size * baseRules.size} filter rules." }
+            logger.info { "Found ${rulesToKeep.size} rules to keep." }
+            if(options.generateRules) {
+                logger.info { "Found ${affixRules.size} affix rules." }
+                logger.info { "Found ${baseRules.size} base rules." }
+            }
+
 
 
             val overrideColor = colorsForOverride.removeLastOrNull()
-
-            // build combined affix/base rules
+            // build combined affix/base rules if enabled
             affixRules.forEach { affix ->
                 baseRules.forEach { base ->
                     val conditions = mutableListOf<Condition>()
@@ -84,44 +120,49 @@ object ItemFilterMerger {
                     if (overrideColor != null) {
                         combined.recolor(overrideColor)
                     }
-                    combined.generateRuleName(compactFilter.fileName)
+                    combined.generateRuleName(currentFilter.fileName)
                     rules.add(combined)
                 }
             }
 
-            fixRules.forEach {
-                if (it.nameOverride.isNullOrBlank()) {
-                    it.nameOverride = "Generated from ${compactFilter.fileName}"
-                } else {
-                    it.nameOverride += " from ${compactFilter.fileName}"
-                }
+            // work on rules to keep
+            rulesToKeep.forEach {
                 if (overrideColor != null) {
                     it.recolor(overrideColor)
                 }
+                it.generateRuleName(currentFilter.fileName)
             }
 
             if (overrideColor != null) {
-                fixRules.forEach { it.recolor(overrideColor) }
+                rulesToKeep.forEach { it.recolor(overrideColor) }
             }
 
             // add the fixed rules
-            rules.addAll(fixRules)
+            rules.addAll(rulesToKeep)
         }
 
 
-        // header rules
-        rules.addAll(clone(header).rules!!.rule!!)
+        // check if we have a header
+        getHeader()?.let { header ->
+            clone(header).rules?.rule?.let { headerRules ->
+                rules.addAll(headerRules)
+            }
+        }
+
+        if (options.enforceRuleLimit && rules.size > options.ruleLimit) {
+            throw ItemFilterMergerException("Rule limit of ${options.ruleLimit} was exceeded.")
+        }
+
 
         logger.info { "${rules.size} rules created in total." }
 
-
-        filter.rules = Rules(rules)
-        var description = filter.description?.trim() ?: ""
+        mainFilter.rules = Rules(rules)
+        var description = mainFilter.description?.trim() ?: ""
         if (description.isNotBlank()) {
             description += "\n"
         }
         description += "From ${Date()}."
-        filter.description = description
-        return filter
+        mainFilter.description = description
+        return mainFilter
     }
 }

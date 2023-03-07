@@ -3,7 +3,7 @@
   <filterIcon>1</filterIcon>
   <filterIconColor>15</filterIconColor>
   <description>Coole description.
-    From Mon Mar 06 17:20:06 CET 2023.</description>
+    From Tue Mar 07 15:41:42 CET 2023.</description>
   <lastModifiedInVersion>0.8.5f</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
@@ -965,7 +965,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Idols from player2.xml</nameOverride>
+      <nameOverride>from player2.xml
+        Idols</nameOverride>
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -996,7 +997,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Skill Shatter from player2.xml</nameOverride>
+      <nameOverride>from player2.xml
+        Skill Shatter</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>
@@ -1031,7 +1033,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>Shatter more 4 from player2.xml</nameOverride>
+      <nameOverride>from player2.xml
+        Shatter more 4</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes/>
@@ -2577,7 +2580,8 @@
       <minLvl>0</minLvl>
       <maxLvl>0</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>IDOLS from player1.xml</nameOverride>
+      <nameOverride>from player1.xml
+        IDOLS</nameOverride>
       <conditions>
         <Condition i:type="SubTypeCondition">
           <type>
@@ -2638,7 +2642,8 @@
       <minLvl>0</minLvl>
       <maxLvl>15</maxLvl>
       <emphasized>false</emphasized>
-      <nameOverride>SHATTER from player1.xml</nameOverride>
+      <nameOverride>from player1.xml
+        SHATTER</nameOverride>
       <conditions>
         <Condition i:type="AffixCondition">
           <affixes>

@@ -38,7 +38,7 @@ data class Rule(
 
         nameOverride =
             if (nameOverride != null || conditions.size != 2 || affixCondition == null || baseCondition == null) {
-                "$nameOverride from $fileName"
+                "from $fileName\n$nameOverride"
             } else {
 
                 val base = (baseCondition.type?.equipmentType ?: listOf("UNKNOWN")).joinToString("|").replace("_", "")
@@ -78,8 +78,6 @@ data class Rule(
                 name
             }
 
-
     }
-
 
 }

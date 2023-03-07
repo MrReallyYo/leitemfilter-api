@@ -1,4 +1,5 @@
 import com.github.mrreallyyo.api.ItemFilterMerger
+import com.github.mrreallyyo.api.MergerOptions
 import com.github.mrreallyyo.api.definitions.ItemFilter
 import java.io.File
 import kotlin.test.Test
@@ -25,7 +26,13 @@ class MergerTests {
             ItemFilter.load(it)
         }
 
-        val merged = ItemFilterMerger.mergeFilter(listOf(player1, player2), listOf(17, 14, 12))
+
+        val opts = MergerOptions(
+            baseFilters = listOf(player1, player2)
+        )
+        val merger = ItemFilterMerger(options = opts)
+
+        val merged = merger.mergeFilter()
 
 /*
         File("merged.xml").outputStream().use {
