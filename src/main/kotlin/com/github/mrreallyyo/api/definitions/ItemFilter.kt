@@ -24,14 +24,8 @@ data class ItemFilter(
     @JsonIgnore
     var fileName: String? = null
 
-    @JsonIgnore
-    var ruleColorOverride: Int? = null
-
-
     companion object {
-        private val logger = KotlinLogging.logger { }
-
-       public fun load(stream: InputStream): ItemFilter {
+       fun load(stream: InputStream): ItemFilter {
             return ItemFilterMapper.newMapper().readValue(stream)
         }
 

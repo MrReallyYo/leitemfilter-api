@@ -9,7 +9,7 @@ class ItemFilterMerger(val options: MergerOptions) {
     private val logger = KotlinLogging.logger { }
 
 
-    private val mapper = options.mapper
+    private val mapper = ItemFilterMapper.newMapper()
 
     private fun getHeader(): ItemFilter? {
         if (options.header != null) return options.header

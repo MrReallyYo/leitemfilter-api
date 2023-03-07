@@ -13,8 +13,7 @@ data class MergerOptions(
     val multiplayerColors: List<Int> = defaultMultiplayerColors,
     val overrideColors: Boolean = defaultOverrideColors,
     val ruleLimit: Int = defaultRuleLimit,
-    val enforceRuleLimit: Boolean = defaultEnforceRuleLimit,
-    var mapper: XmlMapper = ItemFilterMapper.newMapper()
+    val enforceRuleLimit: Boolean = defaultEnforceRuleLimit
 ) {
 
     companion object {
