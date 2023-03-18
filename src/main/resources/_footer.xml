@@ -1,14 +1,29 @@
 ﻿<ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <name>footer</name>
-  <filterIcon>0</filterIcon>
-  <filterIconColor>0</filterIconColor>
-  <description>123</description>
-  <lastModifiedInVersion>0.8.5f</lastModifiedInVersion>
+  <name>_footer</name>
+  <filterIcon>23</filterIcon>
+  <filterIconColor>12</filterIconColor>
+  <description>Footer rules.</description>
+  <lastModifiedInVersion>0.9.0.4</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
     <Rule>
       <type>HIDE</type>
       <conditions />
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>UNIQUE SET</rarity>
+        </Condition>
+      </conditions>
       <color>0</color>
       <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>

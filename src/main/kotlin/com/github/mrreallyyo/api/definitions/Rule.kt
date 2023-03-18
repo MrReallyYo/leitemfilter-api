@@ -7,28 +7,32 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 
 @JacksonXmlRootElement(localName = "Rule")
 data class Rule(
-    var type: String? = null,
-    var color: Int? = null,
-    var isEnabled: Boolean? = null,
-    var levelDependent: Boolean? = null,
-    var minLvl: Int? = null,
-    var maxLvl: Int? = null,
-    var emphasized: Boolean? = null,
-    var nameOverride: String? = null,
+    var type: String,
+    var color: Int,
+    var isEnabled: Boolean,
+    var levelDependent: Boolean,
+    var minLvl: Int,
+    var maxLvl: Int,
+    var emphasized: Boolean,
+    var nameOverride: String?,
 
     @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = ConditionsFilter::class)
-    var conditions: Conditions? = null
+    var conditions: Conditions = Conditions()
 ) {
+
     @JsonIgnore
-    val isFixRule: Boolean = (conditions?.condition?.size ?: 0) > 1 || !nameOverride.isNullOrBlank()
+    var isMainFilter: Boolean = false
+
+    @JsonIgnore
+    val isFixRule: Boolean = conditions.condition.size > 1 || !nameOverride.isNullOrBlank()
 
     @JsonIgnore
     val isAffixRule: Boolean =
-        !isFixRule && conditions?.condition?.size == 1 && conditions!!.condition!!.first().isAffixCondition
+        !isFixRule && conditions.condition.size == 1 && conditions.condition.first().isAffixCondition
 
     @JsonIgnore
     val isSubTypeRule: Boolean =
-        !isFixRule && conditions?.condition?.size == 1 && conditions!!.condition!!.first().isSubTypeCondition
+        !isFixRule && conditions.condition.size == 1 && conditions.condition.first().isSubTypeCondition
 
     fun recolor(color: Int) {
         this.color = color
@@ -38,7 +42,7 @@ data class Rule(
     fun generateRuleName(fileName: String?) {
         val fileName = fileName ?: return
 
-        val conditions = conditions?.condition ?: emptyList()
+        val conditions = conditions.condition ?: emptyList()
 
         val affixCondition = conditions.firstOrNull { it.isAffixCondition } as? AffixCondition
         val subTypeCondition = conditions.firstOrNull { it.isSubTypeCondition } as? SubTypeCondition
@@ -58,20 +62,20 @@ data class Rule(
                 val howMany = "NUM>=${affixCondition.minOnTheSameItem}"
 
                 val match1 = when (affixCondition.comparsion) {
-                    "EQUAL" -> " TIER=${affixCondition.comparsionValue}"
-                    "LESS" -> " TIER<${affixCondition.comparsionValue}"
-                    "MORE" -> " TIER>${affixCondition.comparsionValue}"
-                    "LESS_OR_EQUAL" -> " TIER<=${affixCondition.comparsionValue}"
-                    "MORE_OR_EQUAL" -> " TIER>=${affixCondition.comparsionValue}"
+                    Comparison.EQUAL -> " TIER=${affixCondition.comparsionValue}"
+                    Comparison.LESS -> " TIER<${affixCondition.comparsionValue}"
+                    Comparison.MORE -> " TIER>${affixCondition.comparsionValue}"
+                    Comparison.LESS_OR_EQUAL -> " TIER<=${affixCondition.comparsionValue}"
+                    Comparison.MORE_OR_EQUAL -> " TIER>=${affixCondition.comparsionValue}"
                     else -> ""
                 }
 
                 val match2 = when (affixCondition.combinedComparsion) {
-                    "EQUAL" -> " SUM=${affixCondition.combinedComparsionValue}"
-                    "LESS" -> " SUM<${affixCondition.combinedComparsionValue}"
-                    "MORE" -> " SUM>${affixCondition.combinedComparsionValue}"
-                    "LESS_OR_EQUAL" -> " SUM<=${affixCondition.combinedComparsionValue}"
-                    "MORE_OR_EQUAL" -> " SUM>=${affixCondition.combinedComparsionValue}"
+                    Comparison.EQUAL -> " SUM=${affixCondition.combinedComparsionValue}"
+                    Comparison.LESS -> " SUM<${affixCondition.combinedComparsionValue}"
+                    Comparison.MORE -> " SUM>${affixCondition.combinedComparsionValue}"
+                    Comparison.LESS_OR_EQUAL -> " SUM<=${affixCondition.combinedComparsionValue}"
+                    Comparison.MORE_OR_EQUAL -> " SUM>=${affixCondition.combinedComparsionValue}"
                     else -> ""
                 }
 

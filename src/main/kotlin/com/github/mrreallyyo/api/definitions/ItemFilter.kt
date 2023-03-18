@@ -10,15 +10,15 @@ import java.io.OutputStream
 
 data class ItemFilter(
     @JacksonXmlProperty(isAttribute = true, localName = "xmlns:i")
-    var xmlns_i: String? = null,
+    var xmlns_i: String,
     var name: String? = null,
-    var filterIcon: Int? = null,
-    var filterIconColor: Int? = null,
+    var filterIcon: Int = 0,
+    var filterIconColor: Int = 0,
     var description: String? = null,
-    var lastModifiedInVersion: String? = null,
-    var lootFilterVersion: Int? = null,
+    var lastModifiedInVersion: String,
+    var lootFilterVersion: Int = 0,
     @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = RulesFilter::class)
-    var rules: Rules? = null
+    var rules: Rules = Rules()
 ) {
     @JsonIgnore
     var fileName: String? = null

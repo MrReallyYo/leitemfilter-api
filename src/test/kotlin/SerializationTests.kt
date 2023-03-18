@@ -9,7 +9,7 @@ class SerializationTests {
     fun read() {
 
 
-        val filterFiles = listOf("player1.xml", "player2.xml", "merged.xml", "levelrule.xml")
+        val filterFiles = listOf("ALL AFFIXES.xml","player1.xml", "player2.xml", "merged.xml", "levelrule.xml", "lich_solo.xml")
 
         val testDir = File("testfiles").apply { mkdirs() }
         filterFiles.forEach { filterFile ->

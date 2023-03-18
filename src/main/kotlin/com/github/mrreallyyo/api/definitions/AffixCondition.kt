@@ -6,13 +6,13 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 
 @JsonDeserialize(using = JsonDeserializer.None::class)
 class AffixCondition : AbsCondition() {
-    var affixes: Affixes? = null
-    var comparsion: String? = null
-    var comparsionValue: Int? = null
-    var minOnTheSameItem: Int? = null
-    var combinedComparsion: String? = null
-    var combinedComparsionValue: Int? = null
-    var advanced: Boolean? = null
+    var affixes: Affixes = Affixes()
+    var comparsion: Comparison = Comparison.ANY
+    var comparsionValue: Int = 0
+    var minOnTheSameItem: Int = 0
+    var combinedComparsion: Comparison = Comparison.ANY
+    var combinedComparsionValue: Int = 0
+    var advanced: Boolean = false
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -34,13 +34,13 @@ class AffixCondition : AbsCondition() {
 
     override fun hashCode(): Int {
         var result = super.hashCode()
-        result = 31 * result + (affixes?.hashCode() ?: 0)
-        result = 31 * result + (comparsion?.hashCode() ?: 0)
+        result = 31 * result + (affixes.hashCode() ?: 0)
+        result = 31 * result + (comparsion.hashCode() ?: 0)
         result = 31 * result + (comparsionValue ?: 0)
         result = 31 * result + (minOnTheSameItem ?: 0)
-        result = 31 * result + (combinedComparsion?.hashCode() ?: 0)
+        result = 31 * result + (combinedComparsion.hashCode() ?: 0)
         result = 31 * result + (combinedComparsionValue ?: 0)
-        result = 31 * result + (advanced?.hashCode() ?: 0)
+        result = 31 * result + (advanced.hashCode() ?: 0)
         return result
     }
 

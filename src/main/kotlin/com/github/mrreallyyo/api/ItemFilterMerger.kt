@@ -60,14 +60,6 @@ class ItemFilterMerger(val options: MergerOptions) {
 
         val rules = mutableListOf<Rule>()
 
-        // check if we have a footer
-        getFooter()?.let { footer ->
-            clone(footer).rules?.rule?.let { footerRules ->
-                rules.addAll(footerRules)
-            }
-        }
-
-
         val mainFilter = clone(options.baseFilters.first())
 
         val colorsForOverride = getOverrideColors().toMutableList()
@@ -83,6 +75,7 @@ class ItemFilterMerger(val options: MergerOptions) {
 
             // sort rules
             (currentFilter.rules?.rule ?: emptyList()).forEach { rule ->
+                rule.isMainFilter = isMainFilter
                 if (!options.generateRules) {
                     // we just keep all enabled rules from all filters and disabled from main filter
                     if (rule.isEnabled == true || isMainFilter) {
@@ -99,11 +92,10 @@ class ItemFilterMerger(val options: MergerOptions) {
             }
 
             logger.info { "Found ${rulesToKeep.size} rules to keep." }
-            if(options.generateRules) {
+            if (options.generateRules) {
                 logger.info { "Found ${affixRules.size} affix rules." }
                 logger.info { "Found ${baseRules.size} base rules." }
             }
-
 
 
             val overrideColor = colorsForOverride.removeLastOrNull()
@@ -142,11 +134,17 @@ class ItemFilterMerger(val options: MergerOptions) {
         }
 
 
+
+        rules.sortWith(RuleComparator())
+
+        // check if we have a footer
+        getFooter()?.let { footer ->
+            rules.addAll(0, clone(footer).rules.rule)
+        }
+
         // check if we have a header
         getHeader()?.let { header ->
-            clone(header).rules?.rule?.let { headerRules ->
-                rules.addAll(headerRules)
-            }
+            rules.addAll(clone(header).rules.rule)
         }
 
         if (options.enforceRuleLimit && rules.size > options.ruleLimit) {

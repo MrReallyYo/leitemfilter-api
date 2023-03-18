@@ -9,6 +9,7 @@ import com.fasterxml.jackson.module.kotlin.KotlinModule
 import org.codehaus.stax2.XMLOutputFactory2
 import javax.xml.stream.XMLInputFactory
 
+
 object ItemFilterMapper {
 
     fun newMapper() : XmlMapper {
@@ -27,7 +28,6 @@ object ItemFilterMapper {
         }.build()
 
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
-
         return mapper
     }
 

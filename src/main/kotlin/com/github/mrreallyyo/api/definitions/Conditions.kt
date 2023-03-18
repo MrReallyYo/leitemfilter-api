@@ -6,12 +6,12 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 data class Conditions(
     @JacksonXmlProperty(localName = "Condition")
     @JacksonXmlElementWrapper(useWrapping = false)
-    var condition: List<AbsCondition>? = null
+    var condition: List<AbsCondition> = emptyList()
 )
 
 class ConditionsFilter {
     override fun equals(other: Any?): Boolean {
         val conditions = other as? Conditions ?: return other == null
-        return conditions.condition == null || conditions.condition?.isEmpty() == true
+        return conditions.condition.isEmpty()
     }
 }
